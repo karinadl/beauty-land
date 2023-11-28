@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>K-Means</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+    <!-- Resources -->
+    <script src="https://cdn.amcharts.com/lib/5/index.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/xy.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
+    <link href="../css/responsive.css" rel="stylesheet" />
+  
+</head>
+<body>
+    <!--Header-->
+    <nav>
+      <img src="../images/logo.png" alt="Logo Beauty Land" class="logo">
+        <ul>
+          <li class="nav-item center" id="login-link">
+            <a>Login</a>
+            <ul>
+              <li><a class="letra-ch" href="login.html"> Iniciar Sesión</a></li>
+              <li><a  class="letra-ch" href="registro.html"> Registrarse</a></li>
+            </ul>
+            
+          </li>
+          <li class="nav-item center" id="productos">
+            <a >Productos</a>
+            <ul>
+              <li>
+                <a class="letra-ch" href="productoR.html">Registrar</a>
+              </li>
+              <li><a  class="letra-ch" href="productoD.html">Eliminar </a></li>
+              <li><a class="letra-ch" href="productoM.html">Modificar </a></li>
+              <li><a class="letra-ch" href="productoT.html">Todos</a></li>
+              <li><a class="letra-ch" href="provider.html">Proveedor</a></li>
+              <li><a class="letra-ch" href="providerD.html">Eliminar Proveedor</a></li>
+            </ul>
+          </li>
+          <li class="nav-item center" id="encabezado-link">
+            <a href="index.html">BEAUTY LAND</a>
+          </li>
+          <li class="nav-item center" id="sobremi-link">
+            <a>Nosotros</a>
+            <ul>
+              <li>
+                <a class="letra-ch" href="sobre-mi.html">Sobre mí</a>
+              </li>
+              <li><a class="letra-ch" href="ubicacion.html">Ubicación</a></li>
+            </ul>
+          </li>
+          <li class="nav-item center" id="kmeans-link">
+            <a>IA</a>
+            <ul>
+              <li><a  class="letra-ch" href="k-means.html">K-means</a></li>
+              <li><a class="letra-ch" href="predicciones.html">Predicciones</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+
+
+    <!--Grafico-->
+    <div class="grafico">
+        <div class="selects">
+            <div class="options">
+                <div class="nameClus">Clusters:</div>
+                <select name="select" id="select" class="clusters">
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+            </div>
+            
+            <div class="options">
+                <div class="nameClus">Grafico: </div>
+                <select name="select" id="tipo" class="clusters">
+                    <option>Compra</option>
+                    <option>Precio</option>
+                </select>
+            </div>
+
+        </div>
+        <div id="chartdiv"></div>
+    </div>
+    
+    <!--Lista de productos-->
+    <section class="listProduct" id = "listProduct">
+      
+    </section>
+
+    <script src="../js/script.js"></script>
+    <script src="../js/grafico.js"></script>
+    <link rel="stylesheet" href="../css/style.css">
+</body>
+</html>

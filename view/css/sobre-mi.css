@@ -1,0 +1,157 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #FFFFFF;
+}
+
+/* Contenedor principal */
+.contenedor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    margin: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.txt {
+    max-width: 600px;
+}
+
+#contentContainer {
+    margin-top: 150px;
+    /* Ajusta la altura según la altura de tu barra de navegación */
+    padding: 20px;
+    background-color: #fff;
+    /* Fondo blanco para resaltar el contenido */
+}
+
+#contentContainer h1 {
+    color: #000000;
+    text-align: center;
+    /* Centra el título */
+}
+
+/* h1 {
+    color: #000;
+} */
+
+h3 {
+    color: #c9b8d8;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+p {
+    color: #000;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+ol {
+    list-style-type: decimal;
+}
+
+li {
+    color: #000000;
+}
+
+#imageContainer {
+    flex: 1;
+    overflow: hidden;
+}
+
+#productImage {
+    width: 100%;
+    border-radius: 8px;
+    margin-top: 350px;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #ffdce2;
+    font-size: 22px;
+    font-weight: 500;
+    color: black;
+    text-align: center;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+    margin-right: 20px;
+    padding-left: 40px;
+}
+
+nav #encabezado-link a {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    padding: 20px;
+    margin: 0px;
+    text-align: center;
+
+}
+
+nav li {
+    margin-right: 110px;
+    margin-left: 15px;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: 700;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: rgb(209, 113, 113);
+}
+
+.letra-ch {
+
+    font-size: 17px;
+}
+
+nav li:hover>ul {
+    display: flex;
+    flex-direction: column;
+}
+
+nav ul ul {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* padding: 5px; */
+    width: 150px;
+    z-index: 1;
+
+}
+
+nav ul li:hover>ul {
+    display: block;
+}
+
+nav ul ul li {
+    display: block;
+    width: 80%;
+}

@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Lora, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(to right, #E1CEC3, #E1CEC3);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    background: #fcffff;
+    text-align: center;
+    padding: 30px 85px;
+    box-shadow: 0 5px 10px rgba(71, 3, 6, 0.7);
+}
+
+form .title {
+    color: #000;
+    font-size: 35px;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+
+form label {
+    margin-bottom: 35px;
+}
+
+form label .fa-solid {
+    font-size: 20px;
+    color: #856b9e;
+    margin-right: 10px;
+}
+
+form label input {
+    outline: none;
+    border: none;
+    color: #000;
+    border-bottom: solid 1px #bc9ada;
+    padding: 0 5px;
+    font-size: 18px;
+}
+
+form label input::placeholder {
+    color: rgba(37, 37, 37, 0.5);
+}
+
+form .link {
+    color: #000;
+    margin-bottom: 15px;
+}
+
+form button {
+    color: black;
+    border: none;
+    background: #bc9ada;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.radio-group {
+    text-align: left;
+    /* Alinear a la izquierda */
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #ffdce2;
+    font-size: 22px;
+    font-weight: 500;
+    color: black;
+    text-align: center;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+    margin-right: 20px;
+}
+
+
+nav #encabezado-link a {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    padding: 20px;
+    margin: 0px;
+    text-align: center;
+
+}
+
+nav li {
+    margin-right: 110px;
+    margin-left: 15px;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: 700;
+    transition: color 0.3s;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav a:hover {
+    color: rgb(209, 113, 113);
+}
+
+.letra-ch {
+    font-family: 'Poppins', sans-serif;
+    font-size: 17px;
+}
+
+nav li:hover>ul {
+    display: flex;
+    flex-direction: column;
+}
+
+nav ul ul {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 150px;
+    z-index: 1;
+
+}
+
+nav ul li:hover>ul {
+    display: block;
+}
+
+nav ul ul li {
+    display: block;
+    width: 80%;
+}

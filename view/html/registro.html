@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/registro.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lora&family=Playfair+Display:ital,wght@1,900&display=swap"
+    />
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet">
+    <title>Crear nueva cuenta</title>
+    <link href="../css/responsive.css" rel="stylesheet" />
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li class="nav-item center" id="login-link">
+          <a>Login</a>
+          <ul>
+            <li><a class="letra-ch" href="login.html"> Iniciar Sesión</a></li>
+            <li><a  class="letra-ch" href="registro.html"> Registrarse</a></li>
+          </ul>
+          
+        </li>
+        <li class="nav-item center" id="productos">
+          <a >Productos</a>
+          <ul>
+            <li>
+              <a class="letra-ch" href="productoR.html">Registrar</a>
+            </li>
+            <li><a  class="letra-ch" href="productoD.html">Eliminar </a></li>
+            <li><a class="letra-ch" href="productoM.html">Modificar </a></li>
+            <li><a class="letra-ch" href="productoT.html">Todos</a></li>
+            <li><a class="letra-ch" href="provider.html">Proveedor</a></li>
+            <li><a class="letra-ch" href="providerD.html">Eliminar Proveedor</a></li>
+          </ul>
+        </li>
+        <li class="nav-item center" id="encabezado-link">
+          <a href="index.html">BEAUTY LAND</a>
+        </li>
+        <li class="nav-item center" id="sobremi-link">
+          <a>Nosotros</a>
+          <ul>
+            <li>
+              <a class="letra-ch" href="sobre-mi.html">Sobre mí</a>
+            </li>
+            <li><a class="letra-ch" href="ubicacion.html">Ubicación</a></li>
+          </ul>
+        </li>
+        <li class="nav-item center" id="kmeans-link">
+          <a>IA</a>
+          <ul>
+            <li><a  class="letra-ch" href="k-means.html">K-means</a></li>
+            <li><a class="letra-ch" href="predicciones.html">Predicciones</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+   
+    <div id="formContainer">
+      <h1>Crear nueva cuenta</h1>
+      <label for="userName">Nombre de Usuario:</label>
+      <input type="text" id="userName" name="userName" required />
+
+      <label for="middleName">Apellido Paterno:</label>
+      <input type="text" id="middleName" name="middleName" required />
+
+      <label for="lastName">Apellido Materno:</label>
+      <input type="text" id="lastName" name="lastName" required />
+
+      <label for="cell">Teléfono:</label>
+      <input type="number" id="cell" name="cell" required />
+
+      <label for="pass">Contraseña:</label>
+      <input type="password" id="pass" name="pass" required />
+
+      <label for="userRole">Selecciona el Rol:</label>
+      <select id="userRole" name="userRole">
+        <option value="admin">Administrador</option>
+        <option value="empleado">Empleado</option>
+      </select>
+      <button type="button" id="button">Crear Cuenta</button>
+    </div>
+
+    <div id="imageContainer">
+      <img
+        id="productImage"
+        src="../images/registro.png"
+        alt="Imagen del Producto"
+      />
+    </div>
+<!-- Importar registro.js -->
+<script src="../js/registro.js"></script>
+
+  </body>
+</html>

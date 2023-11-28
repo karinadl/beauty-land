@@ -1,0 +1,121 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    margin-top: 100px;
+}
+
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    font-size: 22px;
+    font-weight: 700;
+    color: black;
+    text-align: center;
+    /* padding: 5px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffdce2;
+}
+
+.logo {
+    width: 80px;
+    margin-right: 40px;
+}
+
+
+nav #encabezado-link a {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    padding: 20px;
+    margin: 0px;
+    text-align: center;
+}
+
+nav li {
+    margin-right: 95px;
+    margin-left: 15px;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: 700;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: rgb(209, 113, 113);
+}
+
+nav li:hover>ul {
+    display: flex;
+    flex-direction: column;
+}
+
+nav ul ul {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 5px;
+    z-index: 1;
+}
+
+nav ul li:hover>ul {
+    display: block;
+}
+
+nav ul ul li {
+    display: block;
+    width: 80%;
+}
+
+.letra-ch {
+
+    font-size: 17px;
+}
+
+.container {
+    display: flex;
+    height: calc(100vh - 60px);
+}
+
+.half {
+    flex: 0.85;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image {
+    background-image: url('../images/ubicacion.jpeg');
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+}
+
+.info {
+    flex: 1;
+    padding: 20px;
+}
+
+.info .map-container {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+}
+
+.info iframe {
+    width: 100%;
+    height: 100%;
+}

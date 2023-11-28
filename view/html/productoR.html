@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/producto.css" />
+    <title>Registro Productos</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet">
+    <link href="../css/responsive.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <nav>
+      <img src="../images/logo.png" alt="Logo Beauty Land" class="logo">
+      <ul>
+        <li class="nav-item center" id="login-link">
+          <a>Login</a>
+          <ul>
+            <li><a class="letra-ch" href="login.html"> Iniciar Sesión</a></li>
+            <li><a  class="letra-ch" href="registro.html"> Registrarse</a></li>
+          </ul>
+          
+        </li>
+        <li class="nav-item center" id="productos">
+          <a >Productos</a>
+          <ul>
+            <li>
+              <a class="letra-ch" href="productoR.html">Registrar</a>
+            </li>
+            <li><a  class="letra-ch" href="productoD.html">Eliminar </a></li>
+            <li><a class="letra-ch" href="productoM.html">Modificar </a></li>
+            <li><a class="letra-ch" href="productoT.html">Todos</a></li>
+            <li><a class="letra-ch" href="provider.html">Proveedor</a></li>
+            <li><a class="letra-ch" href="providerD.html">Eliminar Proveedor</a></li>
+          </ul>
+        </li>
+        <li class="nav-item center" id="encabezado-link">
+          <a href="index.html">BEAUTY LAND</a>
+        </li>
+        <li class="nav-item center" id="sobremi-link">
+          <a>Nosotros</a>
+          <ul>
+            <li>
+              <a class="letra-ch" href="sobre-mi.html">Sobre mí</a>
+            </li>
+            <li><a class="letra-ch" href="ubicacion.html">Ubicación</a></li>
+          </ul>
+        </li>
+        <li class="nav-item center" id="kmeans-link">
+          <a>IA</a>
+          <ul>
+            <li><a  class="letra-ch" href="k-means.html">K-means</a></li>
+            <li><a class="letra-ch" href="predicciones.html">Predicciones</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+   
+    <div id="formContainer">
+      <h1>Registro de Productos</h1>
+      <label for="productName">Nombre del Producto:</label>
+      <input type="text" id="productName" name="productName" required />
+
+      <label for="productPrice">Precio del Producto:</label>
+      <input type="number" id="productPrice" name="productPrice" required />
+
+      <label for="productDescription">Descripción del Producto:</label>
+      <textarea
+        id="productDescription"
+        name="productDescription"
+        rows="3"
+        cols="87"
+        required
+      ></textarea>
+
+      <label for="productUse">Uso del Producto:</label>
+      <input type="text" id="productUse" name="productUse" required />
+
+      <label for="productType">Tipo del Producto:</label>
+      <input type="text" id="productType" name="productType" required />
+      
+      <label for="existencia">Existencia:</label>
+      <input type="number" id="existencia" name="existencia" required />
+
+      <label for="proveedor">Proveedor:</label>
+      <select name="proveedor" id="proveedor">
+        
+      </select>
+      <br> <br>
+      <button type="button" id="registrar">Registrar Producto</button>
+    </div>
+
+    <div id="imageContainer">
+      <img
+        id="productImage"
+        src="../images/registarP.jpg"
+        alt="Imagen del Producto"
+      />
+    </div>
+
+    <script src="../js/productoR.js"></script>
+  </body>
+</html>
